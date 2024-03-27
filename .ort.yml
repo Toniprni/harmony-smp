@@ -71,6 +71,9 @@ resolutions:
     - message: "copyleft-strong license CC-BY-SA-3.0 in Maven:org.freemarker:freemarker:2.3.32."
       reason: "CANT_FIX_EXCEPTION"
       comment: "License is in a license information file. The license defines that fonts used in documentation are under the concluded license and therefore is not an issue."
+    - message: ".*CC-BY-NC-SA-2.5 in Maven:ch.qos.logback:.*"
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "The file is a template file and therefore an example file and not a redistributable artifact."
 
 license_choices:
   package_license_choices:
@@ -82,10 +85,3 @@ license_choices:
     - given: "BSD-3-Clause AND Apache-2.0 AND W3C AND LicenseRef-scancode-public-domain AND MIT AND SAX-PD AND EPL-1.0 AND (Apache-2.0 OR Apache-1.1 OR BSD-3-Clause OR LicenseRef-scancode-public-domain OR LicenseRef-scancode-indiana-extreme) AND (MIT OR GPL-1.0-or-later)"
       choice: "BSD-3-Clause AND Apache-2.0 AND W3C AND LicenseRef-scancode-public-domain AND MIT AND SAX-PD AND EPL-1.0 AND Apache-2.0 AND MIT"
 
-package_configurations:
-- id: "Maven:ch.qos.logback:.*"
-  source_artifact_url: "https://github.com/qos-ch/logback.git"
-  path_excludes:
-  - pattern: "logback-site/src/site/pages/templates/creative.js"
-    reason: "EXAMPLE_OF"
-    comment: "The file is a template file and therefore an example file and not a redistributable artifact."
