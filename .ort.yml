@@ -53,3 +53,16 @@ excludes:
   - pattern: "compileOnly"
     reason: "DEV_DEPENDENCY_OF"
     comment: "Packages for development only."
+
+resolutions:
+  rule_violations:
+    - message: ".*EUPL-1.2.*"
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "EUPL-1.2 is the main license of the project and therefore will not be an issue."
+    - message: ".*EUPL-1.1.*"
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "EUPL-1.2 is the main license of the project and EUPL-1.1 is upward compatible and therefore not an issue."
+    - message: ".*GPL-2.0-only WITH Universal-FOSS-exception-1.0.*"
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "GPL-2.0-only with Universal FOSS Exception 1.0 is acceptable. The exception allows for compatible linking with other FOSS projects."
+      
