@@ -74,13 +74,3 @@ resolutions:
     - message: ".*CC-BY-NC-SA-2.5 in Maven:ch.qos.logback:.*"
       reason: "CANT_FIX_EXCEPTION"
       comment: "The file is a template file and therefore an example file and not a redistributable artifact."
-
-license_choices:
-  package_license_choices:
-  - package_id: "Maven:jakarta.xml.bind:jakarta.xml.bind-api:2.3.3"
-    license_choices:
-    - given: "BSD-3-Clause AND Apache-2.0 AND (GPL-2.0-only OR GPL-2.0-only WITH Classpath-exception-2.0) AND MIT"
-      choice: "BSD-3-Clause AND Apache-2.0 AND GPL-2.0-only WITH Classpath-exception-2.0 AND MIT"
-  - package_id: "Maven:org.glassfish.jaxb:jaxb-runtime:2.3.9"
-    - given: "BSD-3-Clause AND Apache-2.0 AND W3C AND LicenseRef-scancode-public-domain AND MIT AND SAX-PD AND EPL-1.0 AND (Apache-2.0 OR Apache-1.1 OR BSD-3-Clause OR LicenseRef-scancode-public-domain OR LicenseRef-scancode-indiana-extreme) AND (MIT OR GPL-1.0-or-later)"
-      choice: "BSD-3-Clause AND Apache-2.0 AND W3C AND LicenseRef-scancode-public-domain AND MIT AND SAX-PD AND EPL-1.0 AND Apache-2.0 AND MIT"
