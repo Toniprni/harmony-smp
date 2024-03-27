@@ -21,6 +21,10 @@ excludes:
     reason: "OPTIONAL_COMPONENT_OF"
     comment: "Not included in distributed build artifacts."
 
+  - pattern: "logback-site/src/site/pages/templates/creative.js"
+    reason: "EXAMPLE_OF"
+    comment: "The file is a template file."
+
   scopes:
   - pattern: "checkstyle"
     reason: "BUILD_DEPENDENCY_OF"
@@ -65,4 +69,36 @@ resolutions:
     - message: ".*GPL-2.0-only WITH Universal-FOSS-exception-1.0.*"
       reason: "LICENSE_ACQUIRED_EXCEPTION"
       comment: "GPL-2.0-only with Universal FOSS Exception 1.0 is acceptable. The exception allows for compatible linking with other FOSS projects."
-      
+    - message: ".*GPL-2.0-only WITH LicenseRef-scancode-mysql-linking-exception-2018.*"
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "GPL-2.0-only with LicenseRef-scancode-mysql-linking-exception-2018. The exception allows for compatible linking with other FOSS projects."
+    - message: "copyleft-strong license CC-BY-SA-3.0 in Maven:org.freemarker:freemarker:2.3.32."
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "License is in a license information file. The license defines that fonts used in documentation are under the concluded license and therefore is not an issue."
+
+license_choices:
+  package_license_choices:
+  - package_id: "Maven:jakarta.xml.bind:jakarta.xml.bind-api:2.3.3"
+    license_choices:
+    - given: "BSD-3-Clause AND Apache-2.0 AND (GPL-2.0-only OR GPL-2.0-only WITH Classpath-exception-2.0) AND MIT"
+      choice: "BSD-3-Clause AND Apache-2.0 AND GPL-2.0-only WITH Classpath-exception-2.0 AND MIT"
+  - package_id: "Maven:org.glassfish.jaxb:jaxb-runtime:2.3.9"
+    - given: "BSD-3-Clause AND Apache-2.0 AND W3C AND LicenseRef-scancode-public-domain AND MIT AND SAX-PD AND EPL-1.0 AND (Apache-2.0 OR Apache-1.1 OR BSD-3-Clause OR LicenseRef-scancode-public-domain OR LicenseRef-scancode-indiana-extreme) AND (MIT OR GPL-1.0-or-later)"
+      choice: "BSD-3-Clause AND Apache-2.0 AND W3C AND LicenseRef-scancode-public-domain AND MIT AND SAX-PD AND EPL-1.0 AND Apache-2.0 AND MIT"
+    - given:
+      choice: 
+
+    # The input of the calculated effective license would be: (A OR B) AND ((C OR D) AND E)
+    - given: A OR B
+      choice: A
+    # The result would be: A AND ((C OR D) AND E)
+    # The input of the current effective license would be: A AND ((C OR D) AND E)
+    - given: (C OR D) AND E
+      choice: C AND E
+    # The result would be: A AND C AND E
+  - package_id: "Maven:com.example:second:2.3.4"
+    license_choices:
+    # Without a 'given', the 'choice' is applied to the effective license expression if it is a valid choice.
+    # The input from the calculated effective license would be: (C OR D) AND E
+    - choice: C AND E
+    # The result would be: C AND E
