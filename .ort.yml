@@ -74,6 +74,21 @@ resolutions:
     - message: ".*CC-BY-NC-SA-2.5 in Maven:ch.qos.logback:.*"
       reason: "CANT_FIX_EXCEPTION"
       comment: "The file is a template file and therefore an example file and not a redistributable artifact."
+    - message: ".*LicenseRef-scancode-ecma-documentation.*"
+      reason: "NOT_MODIFIED_EXCEPTION"
+      comment: "The LicenseRef-scancode-ecma-documentation license allows redistributing without modifications. As long as the files licensed with said license is redistributed without modifications, the violation is acceptable."
+    - message: ".*LicenseRef-scancode-ms-specification.*"
+      reason: "NOT_MODIFIED_EXCEPTION"
+      comment: "The LicenseRef-scancode-ecma-documentation license allows redistributing without modifications. As long as the files licensed with said license is redistributed without modifications, the violation is acceptable."
+    - message: ".*LicenseRef-scancode-jsr-107-jcache-spec.*"
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "A specification license."
+    - message: ".*LicenseRef-scancode-sun-jsr-spec-04-2006.*"
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "A specification license."
+    - message: ".*LicenseRef-scancode-sun-sdk-spec-1.1.*"
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "A specification license."    
 
 license_choices:
   repository_license_choices:
