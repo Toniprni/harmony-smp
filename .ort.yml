@@ -101,6 +101,9 @@ resolutions:
     - message: "property:non-commercial license LicenseRef-scancode-sun-prop-non-commercial in Maven:javax:javaee-api:7.0."
       reason: "LICENSE_ACQUIRED_EXCEPTION"
       comment: "Later version of the exact same files are licensed under CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0. This information is from version 8.0.1. of the same package."
+    - message: "proprietary-free license LicenseRef-doubleopen-jsr-356-websocket-spec in Maven:org.apache.cxf:.*"
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "The Java API for Websocket (JSR-356) Specification is under a limited license from Oracle - as these files are not modified the implementation should satisfy the requirements for a compliant implementation. Therefore the license conditions are satisfied."
 
 license_choices:
   repository_license_choices:
