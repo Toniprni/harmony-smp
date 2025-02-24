@@ -99,48 +99,66 @@ curations:
     - id: "pkg:maven/org.niis/harmonysmp-resource-extensions@2.2.0"
       curations:
         comment: "Updating correct license mapping."
+        concluded_license: "EUPL-1.2"
         declared_license_mapping:
-          EUPL-2.1: "EUPL-1.2"
+          "EUPL-2.1": "EUPL-1.2"
     - id: "pkg:maven/org.niis/oasis-cppa3-spi@2.2.0"
       curations:
         comment: "Updating correct license mapping."
+        concluded_license: "EUPL-1.2"
         declared_license_mapping:
-          EUPL-2.1: "EUPL-1.2"
+          "EUPL-2.1": "EUPL-1.2"
     - id: "pkg:maven/org.niis/oasis-smp-spi@2.2.0"
       curations:
         comment: "Updating correct license mapping."
+        concluded_license: "EUPL-1.2"
         declared_license_mapping:
-          EUPL-2.1: "EUPL-1.2"
+          "EUPL-2.1": "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp@2.2.0"
       curations:
         comment: "Updating correct license mapping."
+        concluded_license: "EUPL-1.2"
         declared_license_mapping:
-          EUPL-2.1: "EUPL-1.2"
+          "EUPL-2.1": "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-server-library@2.2.0"
       curations:
         comment: "Updating correct license mapping."
+        concluded_license: "EUPL-1.2"
         declared_license_mapping:
-          EUPL-2.1: "EUPL-1.2"
+          "EUPL-2.1": "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-angular@2.2.0"
       curations:
         comment: "Updating correct license mapping."
+        concluded_license: "EUPL-1.2"
         declared_license_mapping:
-          EUPL-2.1: "EUPL-1.2"
+          "EUPL-2.1": "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-spi@2.2.0"
       curations:
         comment: "Updating correct license mapping."
+        concluded_license: "EUPL-1.2"
         declared_license_mapping:
-          EUPL-2.1: "EUPL-1.2"
+          "EUPL-2.1": "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-modules@2.2.0"
       curations:
         comment: "Updating correct license mapping."
+        concluded_license: "EUPL-1.2"
         declared_license_mapping:
-          EUPL-2.1: "EUPL-1.2"
+          "EUPL-2.1": "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-aggregator@2.2.0"
       curations:
         comment: "Updating correct license mapping."
+        concluded_license: "EUPL-1.2"
         declared_license_mapping:
-          EUPL-2.1: "EUPL-1.2"
+          "EUPL-2.1": "EUPL-1.2"
+    - id: "pkg:maven/org.niis/harmonysmp-modules@2.2.0"
+      curations:
+        license_findings:
+          - path: "Notice.md"
+            concluded_license: "EUPL-1.2"
+            comment: "A license notice file with multiple third-party license notices."
+          - path: "pom.xml"
+            concluded_license: "EUPL-1.2"
+            reason: "A license notice file with multiple third-party license notices."
 
 license_choices:
   repository_license_choices:
