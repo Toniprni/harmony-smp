@@ -95,57 +95,52 @@ resolutions:
       comment: "GPL-2.0-only with LicenseRef-scancode-mysql-linking-exception-2018. The exception allows for compatible linking with other FOSS projects."
 
 curations:
-  license_findings:
-    - path: "Core/Domibus-MSH/src/main/resources/config/infinispan/domibus-infinispan-default.xml"
-      concluded_license: "LGPL-2.1-or-later"
-      reason: "INCORRECT"
-      comment: "Corrected scanner finding."
   packages:
     - id: "pkg:maven/org.niis/harmonysmp-resource-extensions@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         declared_license_mapping:
-          "EUPL-2.1": "EUPL-1.2"
+          EUPL-2.1: "EUPL-1.2"
     - id: "pkg:maven/org.niis/oasis-cppa3-spi@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         declared_license_mapping:
-          "EUPL-2.1": "EUPL-1.2"
+          EUPL-2.1: "EUPL-1.2"
     - id: "pkg:maven/org.niis/oasis-smp-spi@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         declared_license_mapping:
-          "EUPL-2.1": "EUPL-1.2"
+          EUPL-2.1: "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         declared_license_mapping:
-          "EUPL-2.1": "EUPL-1.2"
+          EUPL-2.1: "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-server-library@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         declared_license_mapping:
-          "EUPL-2.1": "EUPL-1.2"
+          EUPL-2.1: "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-angular@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         declared_license_mapping:
-          "EUPL-2.1": "EUPL-1.2"
+          EUPL-2.1: "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-spi@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         declared_license_mapping:
-          "EUPL-2.1": "EUPL-1.2"
+          EUPL-2.1: "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-modules@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         declared_license_mapping:
-          "EUPL-2.1": "EUPL-1.2"
+          EUPL-2.1: "EUPL-1.2"
     - id: "pkg:maven/org.niis/harmonysmp-aggregator@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         declared_license_mapping:
-          "EUPL-2.1": "EUPL-1.2"
+          EUPL-2.1: "EUPL-1.2"
 
 package_configurations:
   - id: "pkg:maven/org.niis/harmonysmp-modules@2.2.0"
