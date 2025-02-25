@@ -159,7 +159,7 @@ package_configurations:
         comment: "A license notice file with multiple third-party license notices."
       - path: "pom.xml"
         concluded_license: "EUPL-1.2"
-        reason: "A license notice file with multiple third-party license notices."
+        comment: "A license notice file with multiple third-party license notices."
 
 license_choices:
   repository_license_choices:
