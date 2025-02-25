@@ -93,66 +93,73 @@ resolutions:
     - message: ".*GPL-2.0-only WITH LicenseRef-scancode-mysql-linking-exception-2018.*"
       reason: "LICENSE_ACQUIRED_EXCEPTION"
       comment: "GPL-2.0-only with LicenseRef-scancode-mysql-linking-exception-2018. The exception allows for compatible linking with other FOSS projects."
-    - message: ".*Maven:org.niis:harmonysmp-modules:2.2.0."
-      reason: "LICENSE_ACQUIRED_EXCEPTION"
-      comment: "Problematic files contain lists of different third-party licenses."
 
 curations:
   packages:
-    - id: "pkg:maven/org.niis/harmonysmp-resource-extensions@2.2.0"
+    - id: "Maven:org.niis/harmonysmp-resource-extensions@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
-    - id: "pkg:maven/org.niis/oasis-cppa3-spi@2.2.0"
+    - id: "Maven:org.niis/oasis-cppa3-spi@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
-    - id: "pkg:maven/org.niis/oasis-smp-spi@2.2.0"
+    - id: "Maven:org.niis/oasis-smp-spi@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
-    - id: "pkg:maven/org.niis/harmonysmp@2.2.0"
+    - id: "Maven:org.niis/harmonysmp-spi@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
-    - id: "pkg:maven/org.niis/harmonysmp-server-library@2.2.0"
+    - id: "Maven:org.niis/harmonysmp-server-library@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
-    - id: "pkg:maven/org.niis/harmonysmp-angular@2.2.0"
+    - id: "Maven:org.niis/harmonysmp-angular@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
-    - id: "pkg:maven/org.niis/harmonysmp-spi@2.2.0"
+    - id: "Maven:org.niis/harmonysmp@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
-    - id: "pkg:maven/org.niis/harmonysmp-modules@2.2.0"
+    - id: "Maven:org.niis/harmonysmp-modules@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
-    - id: "pkg:maven/org.niis/harmonysmp-aggregator@2.2.0"
+    - id: "Maven:org.niis/harmonysmp-aggregator@2.2.0"
       curations:
         comment: "Updating correct license mapping."
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
+
+package_configurations:
+  - id: "Maven:org.niis:harmonysmp-modules:2.2.0"
+    license_finding_curations:
+      - path: "Notice.md"
+        concluded_license: "EUPL-1.2"
+        comment: "A license notice file with multiple third-party license notices."
+      - path: "pom.xml"
+        concluded_license: "EUPL-1.2"
+        reason: "A license notice file with multiple third-party license notices."
 
 license_choices:
   repository_license_choices:
