@@ -153,13 +153,13 @@ curations:
 
 package_configurations:
   - id: "Maven:org.niis:harmonysmp-modules:2.2.0"
-    license_finding_curations:
-      - path: "Notice.md"
-        concluded_license: "EUPL-1.2"
+    path_excludes:
+      - pattern: "Notice.md"
+        reason: "DOCUMENTATION_OF"
         comment: "A license notice file with multiple third-party license notices."
-      - path: "pom.xml"
-        concluded_license: "EUPL-1.2"
-        comment: "A license notice file with multiple third-party license notices."
+      - pattern: "pom.xml"
+        reason: "DOCUMENTATION_OF"
+        comment: "The .pom file includes multiple third-party license notices."
 
 license_choices:
   repository_license_choices:
