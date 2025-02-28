@@ -93,6 +93,9 @@ resolutions:
     - message: ".*GPL-2.0-only WITH LicenseRef-scancode-mysql-linking-exception-2018.*"
       reason: "LICENSE_ACQUIRED_EXCEPTION"
       comment: "GPL-2.0-only with LicenseRef-scancode-mysql-linking-exception-2018. The exception allows for compatible linking with other FOSS projects."
+    - message: ".*Maven:org.niis:harmonysmp-modules:2.2.0."
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "Problematic files contain lists of different third-party licenses."
 
 curations:
   packages:
@@ -150,16 +153,6 @@ curations:
         concluded_license: "EUPL-1.2"
         declared_license_mapping:
           "EUPL-2.1": "EUPL-1.2"
-
-package_configurations:
-  - id: "Maven:org.niis:harmonysmp-modules:2.2.0"
-    path_excludes:
-      - pattern: "Notice.md"
-        reason: "DOCUMENTATION_OF"
-        comment: "A license notice file with multiple third-party license notices."
-      - pattern: "pom.xml"
-        reason: "DOCUMENTATION_OF"
-        comment: "The .pom file includes multiple third-party license notices."
 
 license_choices:
   repository_license_choices:
