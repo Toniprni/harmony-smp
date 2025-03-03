@@ -109,6 +109,9 @@ resolutions:
     - message: "commercial license LicenseRef-scancode-proprietary-license in Maven:org.apache.xmlbeans:xmlbeans:5.1.*"
       reason: "LICENSE_ACQUIRED_EXCEPTION"
       comment: "These refer to such older versions schema and other files (in tag 1.0.0 and tags 2.0.0 - 2.6.0) contained in the source distribution which are not used and distributed, therefore the license is complied with."
+    - message: "copyleft-strong license GPL-2.0-or-later in Maven:antlr:antlr:2.7.7."
+      reason: "LICENSE_ACQUIRED_EXCEPTION"
+      comment: "The file is deemed to be separate and distinct from the other parts of the package and therefore seen as mere aggregation. The license obligations of GPL-2.0-or-later do not cover the whole."
 
 license_choices:
   repository_license_choices:
